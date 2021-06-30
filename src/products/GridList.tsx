@@ -36,7 +36,7 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
-const getColsForWidth = (width: Breakpoint) => {
+const getColsForWidth = (width: Breakpoint & any) => {
     if (width === 'xs') return 2;
     if (width === 'sm') return 3;
     if (width === 'md') return 3;
@@ -113,7 +113,7 @@ const LoadedGridList: FC<GridProps> = ({ width }) => {
     );
 };
 
-interface GridProps extends DatagridProps, WithWidth {}
+interface GridProps extends WithWidth { }
 
 const GridList: FC<WithWidth> = ({ width }) => {
     const { loaded } = useListContext();

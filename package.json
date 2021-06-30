@@ -20,6 +20,7 @@
     "bfj": "^7.0.2",
     "camelcase": "^6.1.0",
     "case-sensitive-paths-webpack-plugin": "2.3.0",
+    "classnames": "^2.3.1",
     "css-loader": "4.3.0",
     "data-generator-retail": "^3.15.1",
     "dotenv": "^10.0.0",
